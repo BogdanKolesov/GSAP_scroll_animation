@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
 export const Button = styled(Link)`
-    background: ${({ primary }) => (primary ? `${props => props.theme.colors.primary}` : `${props => props.theme.colors.primary}`)} ;
+
+    //todo: theme
+    background: ${({ primary }) => (primary ? `#156963` : `transparent`)} ;
     white-space: nowrap;
     outline: none;
-    border: none;
+    border: 1px solid ${props => props.theme.colors.primary} ;;
     min-width: 100px;
     max-width: 200px;
     text-decoration: none;
