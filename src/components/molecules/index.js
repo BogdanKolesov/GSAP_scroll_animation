@@ -1,4 +1,4 @@
-import DoubleBlock from 'DoubleBlock';
+import DoubleBlock from './DoubleBlock';
 
 export {
     DoubleBlock

@@ -9,22 +9,22 @@ const DoubleContainer = styled(Container)`
 `;
 
 const Right = styled.div`
-    width: 50%
+    width: 40%
 `;
 
 const Left = styled.div`
-    width: 50%
+    width: 60%
 `;
 
 const DoubleBlock = (right, left) => {
     return (
         <DoubleContainer>
-            <Right>
-                {right}
-            </Right>
             <Left>
                 {left}
             </Left>
+            <Right>
+                {right}
+            </Right>
         </DoubleContainer>
     );
 };
