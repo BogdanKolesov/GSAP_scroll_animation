@@ -42,6 +42,7 @@ export const HeroContent = styled.div`
     align-items: flex-start;
     @media screen and (max-width: 800px){
         width: 100%;
+        align-items: center;
     }
 `;
 
@@ -58,12 +59,11 @@ export const HeroTitle = styled.h1`
 export const HeroText = styled.p`
     width: 80%;
     color: ${props => props.theme.colors.text};
-
 `;
 
 export const HeroButton = styled(Button)`
     &:hover{
-        border: 1px solid ${props => props.theme.colors.text};
+        border: 0.3px solid ${props => props.theme.colors.text};
     }
     @media screen and (max-width: 800px){
         margin-top: 60px;

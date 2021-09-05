@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalTheme, GreenTheme } from '../../themes/';
 import Header from '../../organismes/Header/';
 import Hero from '../../organismes/Hero/';
+import Preferences from '../../organismes/Preferences';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
             <GlobalTheme />
             <Header />
             <Hero />
+            <Preferences />
         </ThemeProvider>
     );
 }
