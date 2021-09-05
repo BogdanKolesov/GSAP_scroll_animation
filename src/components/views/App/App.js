@@ -4,6 +4,7 @@ import { GlobalTheme, GreenTheme } from '../../themes/';
 import Header from '../../organismes/Header/';
 import Hero from '../../organismes/Hero/';
 import Preferences from '../../organismes/Preferences';
+import Featured from '../../organismes/Featured';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Header />
             <Hero />
             <Preferences />
+            <Featured />
         </ThemeProvider>
     );
 }
