@@ -15,7 +15,7 @@ const Featured = () => {
                 {FeaturedData.map((item, index) => (
                     <FeaturedItem key={index}>
                         <FeaturedItemImg src={item.image} alt={item.alt} />
-                        <FeaturedItemTitle>{item.title}</FeaturedItemTitle>
+                        <FeaturedItemTitle to={item.link}>{item.title}</FeaturedItemTitle>
                         <FeaturedItemPrice>{item.price}</FeaturedItemPrice>
                     </FeaturedItem>
                 ))}
