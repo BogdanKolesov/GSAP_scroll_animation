@@ -47,7 +47,10 @@ export const PreferencesTitle = styled.h3`
     margin-left: 5px;
     margin-bottom: 5px;
     @media screen and (max-width: 800px){
-        font-size: 17px;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 400px){
+        font-size: 13px;
     }
 
 `;

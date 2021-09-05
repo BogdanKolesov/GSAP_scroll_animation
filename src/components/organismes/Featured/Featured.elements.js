@@ -7,6 +7,7 @@ export const FeaturedContainer = styled(Container)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 `;
 
 export const FeaturedHeaders = styled.div`
@@ -39,7 +40,7 @@ export const FeaturedItem = styled.div`
     justify-content: center;
     align-items: center;
     margin: 8px;
-    min-height: 250px;
+    min-height: 200px;
     @media screen and (max-width:1270px){
         width: 29%;
     }
@@ -51,13 +52,16 @@ export const FeaturedItem = styled.div`
 export const FeaturedItemImg = styled.img`
     width: 100%;
     margin-bottom: 8px;
+    max-height: 80%;
+    object-fit: cover;
 `;
 
 export const FeaturedItemTitle = styled(Link)`
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 5px;
-    color: ${props => props.theme.colors.text}
+    color: ${props => props.theme.colors.text};
+    text-align: center;
 `;
 
 export const FeaturedItemPrice = styled.p`
