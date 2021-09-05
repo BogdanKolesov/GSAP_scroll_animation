@@ -22,6 +22,7 @@ export const PreferencesItem = styled.div`
 
     @media screen and (max-width: 800px){
         width: 40%;
+        min-height: 180px;
     }
 `;
 
@@ -44,6 +45,7 @@ export const PreferencesTitle = styled.h3`
     font-size: 20px;
     color: ${props => props.theme.colors.primary};
     margin-left: 5px;
+    margin-bottom: 5px;
     @media screen and (max-width: 800px){
         font-size: 17px;
     }
