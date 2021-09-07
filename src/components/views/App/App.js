@@ -6,6 +6,7 @@ import Hero from '../../organismes/Hero/';
 import Preferences from '../../organismes/Preferences';
 import Featured from '../../organismes/Featured';
 import Relax from '../../organismes/Relax';
+import GetFavourites from '../../organismes/GetFavourites/GetFavourites';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Preferences />
             <Featured />
             <Relax />
+            <GetFavourites />
         </ThemeProvider>
     );
 }

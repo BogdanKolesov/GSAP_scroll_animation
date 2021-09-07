@@ -3,6 +3,7 @@ import { Container } from '../../atoms';
 
 export const RelaxContainer = styled(Container)`
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 90%;
     display: flex;
     justify-content: space-between;
