@@ -10,6 +10,8 @@ export const GetFavouritesContainer = styled.div`
     height: 40vh;
     min-height: 250px;
     width: 90%;
+    margin-top: 60px;
+    margin-bottom: 60px;
     @media screen and (max-width: 800px){
         height: 60vh;
         min-height: 250px;

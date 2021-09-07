@@ -36,7 +36,10 @@ export const PreferencesTitles = styled.div`
 export const PreferencesIcon = styled.div`
     color: ${props => props.theme.colors.primary};
     font-size: 40px;
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 1215px){
+        font-size: 35px;
+    }
+    @media screen and (max-width: 950px){
         font-size: 30px;
     }
 `;

@@ -7,6 +7,7 @@ import Preferences from '../../organismes/Preferences';
 import Featured from '../../organismes/Featured';
 import Relax from '../../organismes/Relax';
 import GetFavourites from '../../organismes/GetFavourites/GetFavourites';
+import Bottom from '../../organismes/Bottom/Bottom';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Featured />
             <Relax />
             <GetFavourites />
+            <Bottom />
         </ThemeProvider>
     );
 }
