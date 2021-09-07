@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Container, Wrapper } from '../../atoms';
+import { FaBars, FaCross } from 'react-icons/fa';
 
 export const HeaderContainer = styled(Container)`
     position: sticky;
@@ -20,6 +21,10 @@ export const HeaderLogo = styled.h2`
 
 export const HeaderContent = styled(Wrapper)`
     width: auto;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `;
 
 export const HeaderLinks = styled.div`
@@ -41,4 +46,21 @@ export const HeaderButtons = styled.div`
         Button{
             margin: 15px;
         }
+`;
+
+export const MenuBars = styled(FaBars)`
+    display: none;
+    color: ${props => props.theme.colors.accentText};
+
+    @media screen and (max-width: 768px){
+        display: block;
+        box-sizing: contain;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
 `;
