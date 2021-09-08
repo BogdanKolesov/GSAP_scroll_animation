@@ -9,6 +9,7 @@ import Relax from '../../organismes/Relax';
 import GetFavourites from '../../organismes/GetFavourites/GetFavourites';
 import Bottom from '../../organismes/Bottom/Bottom';
 import Dropdown from '../../organismes/Dropdown';
+import Copyright from '../../organismes/Copyright';
 
 
 
@@ -30,6 +31,7 @@ function App() {
             <Relax />
             <GetFavourites />
             <Bottom />
+            <Copyright />
         </ThemeProvider>
     );
 }

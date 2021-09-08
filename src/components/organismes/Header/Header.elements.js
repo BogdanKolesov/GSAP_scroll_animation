@@ -9,7 +9,7 @@ export const HeaderContainer = styled(Container)`
     justify-content: space-between;
     align-items: center;
     height: 4rem;
-    background: rgba(10, 110, 47, 0.8);
+    background: ${props => props.theme.colors.header};
     padding-left: 15px;
     padding-right: 15px;
 `;
