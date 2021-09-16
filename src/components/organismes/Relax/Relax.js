@@ -1,5 +1,7 @@
 import React from 'react';
 import { RelaxContainer, RelaxContent, RelaxTitle, RelaxText, RelaxContentImage, RelaxImage, RelaxOther } from './Relax.elements';
+import { gsap } from "gsap";
+
 
 const Relax = () => {
     return (
