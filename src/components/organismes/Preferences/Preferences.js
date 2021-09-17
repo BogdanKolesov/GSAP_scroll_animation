@@ -17,6 +17,8 @@ const Preferences = () => {
             ScrollTrigger.create({
                 trigger: preferencesRef.current,
                 animation: t1,
+                toggleActions: "restart"
+
             })
 
         )
