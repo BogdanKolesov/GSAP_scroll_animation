@@ -10,13 +10,13 @@ const Hero = () => {
         gsap.fromTo(
             heroContentRef.current,
             { opacity: 0 },
-            { opacity: 1, duration: 2.2 }
+            { opacity: 1, duration: 0.8 }
         );
 
         gsap.fromTo(
             heroBackgroundRef.current,
             { opacity: 0 },
-            { opacity: 1, duration: 4 }
+            { opacity: 1, duration: 0.8 }
         );
 
     });
