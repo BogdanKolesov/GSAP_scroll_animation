@@ -16,10 +16,10 @@ const Header = ({ toggle }) => {
                 ))}
 
                 <HeaderButtons>
-                    <Button>
+                    <Button to="/flovers">
                         View plants
                     </Button>
-                    <Button primary>
+                    <Button to="contacts" primary>
                         Just do it!
                     </Button>
                 </HeaderButtons>

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { GlobalTheme, GreenTheme } from '../../themes/';
 import Header from '../../organismes/Header/';
-import Hero from '../../organismes/Hero/';
-import Preferences from '../../organismes/Preferences';
-import Featured from '../../organismes/Featured';
-import Relax from '../../organismes/Relax';
-import GetFavourites from '../../organismes/GetFavourites/GetFavourites';
 import Bottom from '../../organismes/Bottom/Bottom';
 import Dropdown from '../../organismes/Dropdown';
 import Copyright from '../../organismes/Copyright';
+import HomePage from '../HomePage';
+import ContactsPage from '../ContactsPage';
+import FloversPage from '../FloversPage';
+import AboutPage from '../AboutPage';
+import PhotoPage from '../PhotoPage';
 
 
 
@@ -21,18 +22,22 @@ function App() {
     }
 
     return (
-        <ThemeProvider theme={GreenTheme}>
-            <GlobalTheme />
-            <Header toggle={toggle} />
-            <Dropdown isOpen={isOpen} toggle={toggle} />
-            <Hero />
-            <Preferences />
-            <Featured />
-            <Relax />
-            <GetFavourites />
-            <Bottom />
-            <Copyright />
-        </ThemeProvider>
+        <Router>
+            <ThemeProvider theme={GreenTheme}>
+                <GlobalTheme />
+                <Header toggle={toggle} />
+                <Dropdown isOpen={isOpen} toggle={toggle} />
+                <Switch>
+                    <Route path="/" exact component={HomePage} />
+                    <Route path="/photo" exact component={PhotoPage} />
+                    <Route path="/flovers" exact component={FloversPage} />
+                    <Route path="/about" exact component={AboutPage} />
+                    <Route path="/contacts" exact component={ContactsPage} />
+                </Switch>
+                <Bottom />
+                <Copyright />
+            </ThemeProvider>
+        </Router>
     );
 }
 
